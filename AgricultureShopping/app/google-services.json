@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "316440855115",
+    "project_id": "agriculture-shopping-37ba1",
+    "storage_bucket": "agriculture-shopping-37ba1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316440855115:android:be03c85aacdbf2cf2543ce",
+        "android_client_info": {
+          "package_name": "com.example.agricultureshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316440855115-poqnv5snkj3vjsj2rif23hvmjgfvjh4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdM4iGRhwjU3yyJgBEbelfzA4bGHYTj1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316440855115-poqnv5snkj3vjsj2rif23hvmjgfvjh4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
