@@ -10,7 +10,6 @@ public class ProductCategory {
         this.productName = productName;
     }
 
-
     public Integer getProductId() {
         return productId;
     }

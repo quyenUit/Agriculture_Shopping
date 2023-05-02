@@ -6,14 +6,19 @@ public class ProductItem {
     String productItemName;
     String getProductIteQty;
     Integer getProductItemImage;
+    String locationItem;
+    String unitItem;
+
     double productItemPrice;
 
-    public ProductItem(Integer productItemId, String productItemName, String getProductIteQty, Integer getProductItemImage, double productItemPrice) {
+    public ProductItem(Integer productItemId, String productItemName, String getProductIteQty, Integer getProductItemImage, double productItemPrice, String locationItem, String unitItem) {
         this.productItemId = productItemId;
         this.productItemName = productItemName;
         this.getProductIteQty = getProductIteQty;
         this.getProductItemImage = getProductItemImage;
         this.productItemPrice = productItemPrice;
+        this.locationItem = locationItem;
+        this.unitItem = unitItem;
     }
 
     public Integer getProductItemId() {
@@ -26,6 +31,23 @@ public class ProductItem {
 
     public String getProductItemName() {
         return productItemName;
+    }
+
+    public String getLocationItem() {
+        return locationItem;
+    }
+
+
+    public void setLocationItem(String locationItem) {
+        this.locationItem = locationItem;
+    }
+
+    public String getUnitItem() {
+        return unitItem;
+    }
+
+    public void setUnitItem(String unitItem) {
+        this.unitItem = unitItem;
     }
 
     public void setProductItemName(String productItemName) {
@@ -48,11 +70,12 @@ public class ProductItem {
         this.getProductItemImage = getProductItemImage;
     }
 
-    public int getProductItemPrice() {
-        return (int) productItemPrice;
+    public double getProductItemPrice() {
+        return (double) productItemPrice;
     }
 
-    public void setProductItemPrice(Float productItemPrice) {
+    public void setProductItemPrice(double productItemPrice) {
         this.productItemPrice = productItemPrice;
     }
+
 }
