@@ -1,6 +1,8 @@
 package com.example.agriculture_shopping_app.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.agriculture_shopping_app.ProductDetails;
 import com.example.agriculture_shopping_app.R;
 import com.example.agriculture_shopping_app.model.ProductItem;
 
@@ -37,6 +40,18 @@ public class ProductItemAdapter extends RecyclerView.Adapter<ProductItemAdapter.
         holder.productItemName.setText(productItemList.get(position).getProductItemName());
 //        holder.productItemPrice.setText(productItemList.get(position).getProductItemPrice());
         holder.productItemQty.setText(productItemList.get(position).getGetProductIteQty());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, ProductDetails.class);
+                Bundle itemData = new Bundle();
+                itemData.putInt("Image", productItemList.get(position).getGetProductItemImage());
+                itemData.putString("Name", productItemList.get(position).getProductItemName());
+                itemData.putDouble("Price", productItemList.get(position).getProductItemPrice());
+                i.putExtras(itemData);
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override

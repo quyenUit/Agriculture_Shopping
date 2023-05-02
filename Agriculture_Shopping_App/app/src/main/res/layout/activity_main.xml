@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/task_menu"
     android:layout_width="match_parent"
-    android:background="@drawable/bg2"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -96,11 +95,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/item_recycler"
-        android:layout_width="374dp"
-        android:layout_height="424dp"
+        android:layout_width="381dp"
+        android:layout_height="500dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/flFragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"

@@ -2,6 +2,7 @@ package com.example.agriculture_shopping_app.adapter;
 
 import android.content.Context;
 //import android.support.v7.widget.RecyclerView;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.agriculture_shopping_app.MainActivity;
+import com.example.agriculture_shopping_app.ProductDetails;
 import com.example.agriculture_shopping_app.R;
 import com.example.agriculture_shopping_app.model.ProductCategory;
 import com.example.agriculture_shopping_app.model.ProductItem;

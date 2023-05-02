@@ -79,12 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         // add product item
         List<ProductItem> productItemList = new ArrayList<>();
-        productItemList.add(new ProductItem(1, "Dua Hau", "12", R.drawable.download, 100.000));
-        productItemList.add(new ProductItem(2, "Cam", "30", R.drawable.cam, 10.000));
-        productItemList.add(new ProductItem(3, "Thanh Long", "40", R.drawable.tl, 20.000));
-        productItemList.add(new ProductItem(4, "Buoi", "70", R.drawable.buoi, 50.000));
-        productItemList.add(new ProductItem(5, "XaLach", "50", R.drawable.salach, 10.000));
-        productItemList.add(new ProductItem(6, "Ngo", "25", R.drawable.ngo, 40.000));
+        
 
         setProductItemRecycler(productItemList);
     }
@@ -154,9 +149,5 @@ public class MainActivity extends AppCompatActivity {
         productItemRecycler.setLayoutManager(layoutManager);
         productItemAdapter = new ProductItemAdapter(this, productItemList);
         productItemRecycler.setAdapter(productItemAdapter);
-
     }
-
-
-
 }
